@@ -1,12 +1,13 @@
-let alunosDevClub = "João, Maria, Jorge, Pedro, Luiz, Paula, Anderson";
-let numeroDaCasa = 345;
-let carrinhoRodolfo = "Fone de Ouvido JBL";
+let imagem = document.querySelector(".troca-imagem");
 
-console.log(alunosDevClub);
-console.log(carrinhoRodrigo);
-
-function dizerMeuNome() {
-    console.log("Meu nome é: Rodrigo");
+function trocaImagem() {
+    if (imagem.style.opacity == 0) {
+        imagem.style.opacity = 1;
+    } else {
+        imagem.style.opacity = 0;
+    }
 }
 
-dizerMeuNome();
+setInterval(trocaImagem, 3000);
+
+console.log(imagem);
